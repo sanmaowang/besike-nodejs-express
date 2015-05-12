@@ -12,8 +12,7 @@ var app = createMiniHarp();
 var path = argv._[0] || process.cwd();
 
 app.use('/current-time',function(req,res,next){
-		res.end(new Date().toISOString());
-		next();
+    res.end(new Date().toISOString());
 });
 
 
